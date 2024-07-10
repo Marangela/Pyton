@@ -1,0 +1,46 @@
+# Sua tarefa é criar um programa em Python que permita ao usuário gerenciar uma lista de tarefas. O programa deve ter recursos para adicionar tarefas, remover tarefas, marcar tarefas como concluídas, listar todas as tarefas e listar apenas tarefas concluídas ou não concluídas.
+
+# adicionarTarefa: Função para adicionar uma nova tarefa à lista.
+# removerTarefa: Função para remover uma tarefa da lista.
+# concluirTarefa: Função para marcar uma tarefa como concluída.
+# listarTarefa: Função para exibir todas as tarefas na lista.
+# listarTarefaPorStatus: Função para listar tarefas com base em seu status de conclusão.
+
+tasksList = []
+
+def addTask():
+    taskName = input("Qual o nome da tarefa que deseja adicionar??")
+    taskStatus = input("Qual o status da tarefa??")
+    taskPriority = input("Qual a prioridade da tarefa??")
+    dueDateTask = input("Qual a data de vencimento da tarefa??")
+    task = [taskName, taskStatus, taskPriority, dueDateTask]
+    tasksList.append(task)
+    
+def removeTask():
+    print(tasksList)
+    
+exit = 1
+while exit == 1:
+    print("Gerenciador de tarefas")
+    print("1 - Criar uma tarefa")
+    print("2 - remover uma tarefa")
+    print("3 - marcar como concluida")
+    print("4 - listar todas as tarefas")
+    print("5 - listar tarefas por status")
+    print("6 - Sair da lista de tarefas")
+    option = input("Qual das opções anteriores você deseja:")
+    
+if option == "1":
+    addTask()
+elif option == "2":
+    removeTask()
+    
+    
+    
+Gerenciador de tarefas
+1 - Criar uma tarefa
+2 - remover uma tarefa
+3 - marcar como concluida
+4 - listar todas as tarefas
+5 - listar tarefas por status
+6 - Sair da lista de tarefas
